@@ -10,4 +10,4 @@ mongoose.connect("mongodb+srv://marcosgarzonmdq:lapapa10.@cluster0.tmathxe.mongo
   }
 });
 
-export default mongoose;
+export default mongoose; 

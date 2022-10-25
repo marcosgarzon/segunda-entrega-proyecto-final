@@ -2,6 +2,8 @@ import './src/config/db.js'
 import express from 'express';
 import { productsRouter } from './src/router/productos.js'
 import { cartRouter } from './src/router/carrito.js'
+import { productsRouterFirestore } from './src/router/productosFirestore.js'
+import { cartsRouterFirestore } from './src/router/cartsFirestore.js'
 
 
 const app = express();
@@ -12,7 +14,8 @@ app.use(express.static("public"));
 //Routes
 app.use("/productos", productsRouter);
 app.use("/carrito", cartRouter);
-
+app.use("/products", productsRouterFirestore);
+app.use("/carts", cartsRouterFirestore);
 
 //en caso de solicitar una ruta no implementada
 app.get('*', (req, res) => {
