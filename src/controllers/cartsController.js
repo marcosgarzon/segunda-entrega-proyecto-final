@@ -11,7 +11,7 @@ export class Controller{
     }
     async add(req, res){
         try {
-            const response = await CartsModel.create({productos:[]})
+            const response = await CartsModel.create({productos:[req.body]})
             res.status(200).json({message: `Carrito agregado con id: ${response._id}`})
         }catch (error){
             res.status(400).json({error: error, ruta: req.originalUrl, metodo: req.method})

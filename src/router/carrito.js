@@ -17,7 +17,7 @@ cartRouter.delete("/:id", cartsController.deleteById)
 cartRouter.get("/:id/productos", cartsController.getById)
 
 //add product in cart
-cartRouter.post("/:id/productos", cartsController.addProductIncart)
+cartRouter.put("/:id/productos", cartsController.addProductIncart)
 
 //delete product in cart by id
 cartRouter.delete("/:id/productos/:id_prod", cartsController.deleteProductIncart)
