@@ -5,7 +5,8 @@ En la ruta del repositorio:
 segunda-entrega-proyecto-final/src/config/  
 se encuentra db.js (mongo) y db2.js(firestore) para cambiar el punto de conexión.
 
-
+Comando: "npm run dev" para correr con nodemon  
+  
 # MONGO ENDPOINTS  
 
 # PRODUCTOS:  
