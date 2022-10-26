@@ -4,22 +4,22 @@ import { cartsController } from "../controllers/cartsControllerFirestore.js"
 const cartsControllerFirestore = new cartsController
 export const cartsRouterFirestore = express.Router()
 
-//get products all
+//get carts all
 
 cartsRouterFirestore.get("/", cartsControllerFirestore.getAll)
 
-//get product id
+//get carts id
 
 cartsRouterFirestore.get("/:id", cartsControllerFirestore.getById)
 
-//add product
+//add carts
 
 cartsRouterFirestore.post("/", cartsControllerFirestore.add)
 
-// delete product by id
+// delete carts by id
 
 cartsRouterFirestore.delete("/:id", cartsControllerFirestore.delete)
 
-//update product by id
+//update carts by id
 
 cartsRouterFirestore.put("/:id", cartsControllerFirestore.update)
